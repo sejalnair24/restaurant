@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 export default function Chef(){
     const router=useRouter();
     return(
-        <div>
+        <div className=" bg-gray-100 dark:bg-gray-600">
          <div className="flex flex-row md:items-center px-30 py-10 border-b-gray-600 border-b-1  md:justify-between bg-black">
                
                 <img className=" md:w-28 w-24 mr-8" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
@@ -32,12 +32,12 @@ export default function Chef(){
         </p>
       </div>
     </div>
-    <div className="bg-gray-100 py-20">
+    <div className="bg-gray-100 dark:bg-zinc-800 py-20">
   
   <div className="text-[#82704e] font-bold text-2xl md:mt-0 -mt-70 text-center">
     --- MASTER CHEFS ---
   </div>
-  <div className="text-black font-bold text-4xl text-center mb-12">
+  <div className="text-black dark:text-white font-bold text-4xl text-center mb-12">
     MEET OUR SPECIAL CHEFS
   </div>
 
