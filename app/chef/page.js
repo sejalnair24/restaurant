@@ -1,6 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
+<<<<<<< HEAD
 import Footer from "../components/Footer";
+=======
+>>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
 export default function Chef(){
     const router=useRouter();
     return(
@@ -33,9 +36,15 @@ export default function Chef(){
         </p>
       </div>
     </div>
+<<<<<<< HEAD
     <div className="bg-gray-100 dark:bg-zinc-800 py-20 md:mt-0 -mt-75">
   
   <div className="text-[#82704e] font-bold text-2xl md:mt-0 mt-10 text-center">
+=======
+    <div className="bg-gray-100 dark:bg-zinc-800 py-20">
+  
+  <div className="text-[#82704e] font-bold text-2xl md:mt-0 -mt-70 text-center">
+>>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
     --- MASTER CHEFS ---
   </div>
   <div className="text-black dark:text-white font-bold text-4xl text-center mb-12">
@@ -106,8 +115,14 @@ export default function Chef(){
     </div>
   </div>
 </div>
+<<<<<<< HEAD
 <div><Footer/></div>
 
+=======
+<div className=" bg-black/90 py-10 flex justify-between px-20 items-center ">
+<img className="w-40 "src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
+ </div>
+>>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
     </div>
     )
 }
