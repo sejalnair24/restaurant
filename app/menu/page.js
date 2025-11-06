@@ -1,21 +1,15 @@
 "use client";
 import { useRouter } from "next/navigation";
-<<<<<<< HEAD
 import Footer from "../components/Footer";
 export default function Menu(){
     const router=useRouter();
-    return(
-        <div className=" bg-gray-100 ">
-=======
-export default function Menu(){
-    const router=useRouter();
-    return(
+     return(
         <div className=" bg-gray-100 dark:bg-zinc-900 ">
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
             <div className="flex flex-row items-center px-30 py-10 border-b-gray-600 border-b-1  justify-between bg-black">
                
                 <img className=" w-28 mr-8" src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
-                <div className="md:flex flex-row font-bold text-lg px-8 space-x-10 hidden md:block ">
+                <div className="md:flex flex-row font-bold text-lg px-8 space-x-10 hidden md:block text-white">
                   <div onClick={()=>router.push("/")}>Home</div>
                   <div>Pages</div>
                   <div>Menu</div>
@@ -24,11 +18,10 @@ export default function Menu(){
                   <img className="size-12 rounded-full mx-10  " src="https://tse1.mm.bing.net/th/id/OIP.JRBIv4WXa_jQW7MLYOe06wHaHa?pid=Api&P=0&h=180"/>
                   
                   </div>
-<<<<<<< HEAD
-                  <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block">Reservation</div>
-=======
-                  <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block ">Reservation</div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
+                
+                  <div className="border-2 border-white flex items-center justify-center w-70 h-14 text-lg font-bold  hover:bg-white hover:text-black transition hidden md:block text-white">Reservation</div>
+
         </div>
         <div className="relative bg-[url('https://i.pinimg.com/1200x/53/10/f2/5310f24f0f5ba2776ad6eb390fdd4fa9.jpg')] md:bg-cover md:bg-center bg-contain bg-no-repeat text-white text-center py-60  ">
      
@@ -38,7 +31,7 @@ export default function Menu(){
       <div className="relative z-10 md:-mt-40 -mt-45">
         <h1 className="md:text-5xl text-4xl font-bold  ">Food Menu</h1>
         <p className="text-lg mt-5 font-semibold">
-          Home <span className="text-gray-300">›</span> Menu
+          Home <span className="text-gray-300"></span> Menu
         </p>
       </div>
     </div>
@@ -54,17 +47,12 @@ export default function Menu(){
         </div>
    <div className="md:w-1/2 w-full px-10 py-30">
    
-<<<<<<< HEAD
-    <div className="flex flex-row space-x-2 mb-6 md:mx-98 md:ml-125 -ml-50">
-      <div className="border border-gray-400 px-4 py-1 text-black">Half</div>
-      <div className="border border-gray-400 px-4 py-1 text-black">Full</div>
-=======
-    <div className="flex flex-row space-x-2 mb-6 md:mx-98 md:ml-100 -ml-50">
-      <div className="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Half</div>
-      <div className="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Full</div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
-    </div>
 
+    <div className="flex flex-row space-x-2 mb-6 md:mx-98 md:ml-145 -ml-50">
+      <div className="border border-gray-400 px-4 py-1 text-black dark:text-white">Half</div>
+      <div className="border border-gray-400 px-4 py-1 text-black dark:text-white">Full</div>
+  </div>
+    
     
     <div className="md:flex items-center flex flex-row md:justify-between mb-6  md:ml-0 -ml-95">
       <div className=" flex items-center md:space-x-4 space-x-2 ">
@@ -74,13 +62,10 @@ export default function Menu(){
           className="md:w-20 w-17 h-20 rounded-full object-cover hidden md:block "
         />
         <div>
-<<<<<<< HEAD
-          <h3 className="text-xl font-bold text-black">Chicken Alfredo</h3>
-          <p className="text-gray-600">Ricotta / Goat Cheese / Beetroot</p>
-=======
+
           <h3 className="text-xl font-bold text-black dark:text-white">Chicken Alfredo</h3>
           <p className="text-gray-600 dark:text-gray-100">Ricotta / Goat Cheese / Beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p className="text-gray-400 text-sm">Free Drinks</p>
         </div>
       </div>
@@ -99,13 +84,11 @@ export default function Menu(){
           className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Fish Chips</h3>
-          <p class="text-gray-600">Atlantic / Chips / Salad / Tartare</p>
-=======
+
+       
           <h3 class="text-xl font-bold text-black dark:text-white">Fish Chips</h3>
           <p class="text-gray-600 dark:text-gray-100">Atlantic / Chips / Salad / Tartare</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Free Drinks</p>
         </div>
       </div>
@@ -121,13 +104,11 @@ export default function Menu(){
         <img src="https://i.pinimg.com/736x/3c/b2/6e/3cb26eb0b32e52171c70c89b3eefc8c5.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Ebony Fillet Steak</h3>
-          <p class="text-gray-600">Truffle mash / pepper sauce</p>
-=======
+
+         
           <h3 class="text-xl font-bold text-black dark:text-white">Ebony Fillet Steak</h3>
           <p class="text-gray-600 dark:text-gray-100">Truffle mash / pepper sauce</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Free Drinks</p>
         </div>
       </div>
@@ -140,13 +121,12 @@ export default function Menu(){
       <div class="flex items-center md:space-x-4 space-x-2">
         <img src="https://i.pinimg.com/1200x/d3/07/2a/d3072adbd91ba3094777720a1337a34a.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"/>
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Chicken grill</h3>
-          <p class="text-gray-600">Ricotta / goat cheese / beetroot</p>
-=======
+
+         
+
           <h3 class="text-xl font-bold text-black dark:text-white">Chicken grill</h3>
           <p class="text-gray-600 dark:text-gray-100">Ricotta / goat cheese / beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Free Drinks</p>
         </div>
       </div>
@@ -161,17 +141,13 @@ export default function Menu(){
        
    <div class="md:w-1/2 w=full md:px-10 px-5">
    
-<<<<<<< HEAD
-    <div class="flex flex-row  space-x-2 mb-6 md:mx-98 mx-40  md:ml-0 ">
-      <div class="border border-gray-400 px-4 py-1 text-black">Half</div>
-      <div class="border border-gray-400 px-4 py-1 text-black">Full</div>
-=======
-    <div class="flex flex-row  space-x-2 mb-6 md:mx-98 mx-40  md:ml-97 ">
-      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Half</div>
-      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Full</div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
-    </div>
 
+    <div class="flex flex-row  space-x-2 mb-6 md:mx-98 mx-40  md:ml-145 ml-20">
+      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white">Half</div>
+      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white">Full</div>
+
+   
+</div>
     
     <div class="md:flex items-center  md:justify-between md:mb-6 ">
       <div class="md:flex items-center md:space-x-4 ">
@@ -179,13 +155,12 @@ export default function Menu(){
           src="https://i.pinimg.com/1200x/04/6f/11/046f1140c8d118c0539c5faadd41a782.jpg" class="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div >
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black md:mt-0 mt-85">Brownies</h3>
-          <p class="text-gray-600 ">Ricotta / Goat Cheese / Beetroot</p>
-=======
+
+        
+
           <h3 class="text-xl font-bold text-black md:mt-0 mt-85 dark:text-white">Brownies</h3>
           <p class="text-gray-600 dark:text-gray-100  ">Ricotta / Goat Cheese / Beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm ">Extra Free Drinks</p>
         </div>
       </div>
@@ -204,13 +179,12 @@ export default function Menu(){
           className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black md:mt-0 mt-10">Cheesecakes</h3>
-          <p class="text-gray-600">Atlantic / Chips / Salad / Tartare</p>
-=======
+
+       
+
           <h3 class="text-xl font-bold text-black md:mt-0 mt-10 dark:text-white">Cheesecakes</h3>
           <p class="text-gray-600 dark:text-gray-100">Atlantic / Chips / Salad / Tartare</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -226,13 +200,11 @@ export default function Menu(){
         <img src="https://i.pinimg.com/736x/b0/fd/ed/b0fdedcc415ee9ef12528f01c7366326.jpg" className="w-20 h-20 rounded-full object-cover hidden  md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Muffins</h3>
-          <p class="text-gray-600">Truffle mash / pepper sauce</p>
-=======
+
+
           <h3 class="text-xl font-bold text-black dark:text-white">Muffins</h3>
           <p class="text-gray-600 dark:text-gray-100">Truffle mash / pepper sauce</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -246,13 +218,12 @@ export default function Menu(){
         <img src="https://i.pinimg.com/736x/3b/6c/4e/3b6c4edfcc5c9abafb88f25f7bb0181d.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Cupcakes</h3>
-          <p class="text-gray-600">Ricotta / goat cheese / beetroot</p>
-=======
+
+        
+
           <h3 class="text-xl font-bold text-black dark:text-white">Cupcakes</h3>
           <p class="text-gray-600 dark:text-gray-100">Ricotta / goat cheese / beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -263,7 +234,7 @@ export default function Menu(){
     </div>
   </div>
   <img className="md:w-1/2 md:px-20 px-5 py-10 md:h-150 h-90 md:w-200 md:mt-0 -mt-185 w-full "src="https://i.pinimg.com/1200x/dc/7f/0a/dc7f0aca9f8fd611fd2aa44560e315f3.jpg"/>
-        <div className="absolute hidden md:block top-[-3rem] left-170 bg-[#7b6749] shadow-lg  w-44 px-10 py-10 justify-center items-center menu-star rounded-full">
+        <div className="absolute hidden md:block top-[-3rem] left-200 bg-[#7b6749] shadow-lg  w-44 px-10 py-10 justify-center items-center menu-star rounded-full">
 <h2 className="text-4xl font-bold text-amber-300 mb-2 mt-5 ">
         Menu
       </h2>
@@ -290,19 +261,13 @@ export default function Menu(){
 <div className="md:flex flex-row flex-col">
 <div class="md:w-1/2 w-full md:px-10 px-5 py-40 ">
    <div className="text-[#7b6749] text-[30px] md:pl-30 pl-10 md:mt-0 -mt-15">Fresh From Ocean</div>
-<<<<<<< HEAD
-   <div className="text-black mb-10 text-[44px] md:pl-37 pl-18">Sea Food</div>
-    <div class="flex  space-x-2 mb-6 md:mx-145 mx-45">
-      <div class="border border-gray-400 px-4 py-1 text-black">Half</div>
-      <div class="border border-gray-400 px-4 py-1 text-black">Full</div>
-=======
-   <div className="text-black mb-10 text-[44px] md:pl-37 pl-18 dark:text-white">Sea Food</div>
-    <div class="flex  space-x-2 mb-6 md:mx-98 mx-45">
-      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Half</div>
-      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Full</div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
-    </div>
 
+   <div className="text-black mb-10 text-[44px] md:pl-37 pl-18 dark:text-white">Sea Food</div>
+    <div class="flex  space-x-2 mb-6 md:mx-145 mx-45">
+      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white">Half</div>
+      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white">Full</div>
+</div>
+   
     
     <div class="flex items-center justify-between mb-6">
       <div class="flex items-center space-x-4">
@@ -312,13 +277,12 @@ export default function Menu(){
           class="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Salmon Fry</h3>
-          <p class="text-gray-600">Ricotta / Goat Cheese / Beetroot</p>
-=======
+
+         
+
           <h3 class="text-xl font-bold text-black dark:text-white">Salmon Fry</h3>
           <p class="text-gray-600 dark:text-gray-100">Ricotta / Goat Cheese / Beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -337,13 +301,12 @@ export default function Menu(){
           className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Pangasius or Basa</h3>
-          <p class="text-gray-600">Atlantic / Chips / Salad / Tartare</p>
-=======
+
+        
+
           <h3 class="text-xl font-bold text-black dark:text-white">Pangasius or Basa</h3>
           <p class="text-gray-600 dark:text-gray-100">Atlantic / Chips / Salad / Tartare</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -359,13 +322,10 @@ export default function Menu(){
         <img src="https://i.pinimg.com/736x/84/0c/75/840c75d2794e2c10336b8cd42aaa893f.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Clams</h3>
-          <p class="text-gray-600">Truffle mash / pepper sauce</p>
-=======
+
           <h3 class="text-xl font-bold text-black dark:text-white">Clams</h3>
           <p class="text-gray-600 dark:text-gray-100">Truffle mash / pepper sauce</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -379,13 +339,11 @@ export default function Menu(){
         <img src="https://i.pinimg.com/736x/82/b4/59/82b459784464e248df731ee11076dcca.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Red Crab</h3>
-          <p class="text-gray-600">Ricotta / goat cheese / beetroot</p>
-=======
+
+        
+
           <h3 class="text-xl font-bold text-black dark:text-white">Red Crab</h3>
-          <p class="text-gray-600 dark:text-gray-100">Ricotta / goat cheese / beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -395,22 +353,16 @@ export default function Menu(){
       </div>
     </div>
   </div>
+ 
   <div class="md:w-1/2 w-full md:px-10 px-5 py-40 ">
    <div className="text-[#7b6749] text-[30px] md:pl-30 pl-10 md:mt-0 -mt-65">DRINKS & WINE</div>
-<<<<<<< HEAD
-   <div className="text-black mb-10 text-[44px] md:pl-37 pl-16">Beverage</div>
-    <div class="flex  space-x-2 mb-6 md:mx-140 mx-45">
-      <div class="border border-gray-400 px-4 py-1 text-black">Half</div>
-      <div class="border border-gray-400 px-4 py-1 text-black">Full</div>
-=======
-   <div className="text-black mb-10 text-[44px] md:pl-37 pl-16 dark:text-white">Beverage</div>
-    <div class="flex  space-x-2 mb-6 md:mx-98 mx-45">
-      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Half</div>
-      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white bg-amber-950">Full</div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
-    </div>
 
-    
+   <div className="text-black mb-10 text-[44px] md:pl-37 pl-16 dark:text-white">Beverage</div>
+    <div class="flex  space-x-2 mb-6 md:mx-140 mx-45">
+      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white">Half</div>
+      <div class="border border-gray-400 px-4 py-1 text-black dark:text-white">Full</div>
+ </div>
+   
     <div class="flex items-center justify-between mb-6">
       <div class="flex items-center space-x-4">
         <img
@@ -419,13 +371,12 @@ export default function Menu(){
           class="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Wine</h3>
-          <p class="text-gray-600">Ricotta / Goat Cheese / Beetroot</p>
-=======
+
+         
+
           <h3 class="text-xl font-bold text-black dark:text-white">Wine</h3>
           <p class="text-gray-600 dark:text-gray-100">Ricotta / Goat Cheese / Beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -444,13 +395,11 @@ export default function Menu(){
           className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Coffee</h3>
-          <p class="text-gray-600">Atlantic / Chips / Salad / Tartare</p>
-=======
+
+        
           <h3 class="text-xl font-bold text-black dark:text-white">Coffee</h3>
           <p class="text-gray-600 dark:text-gray-100">Atlantic / Chips / Salad / Tartare</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -466,13 +415,11 @@ export default function Menu(){
         <img src="https://i.pinimg.com/736x/42/6c/7c/426c7cf03cd06e36dae8c20e04b646e3.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Hot Chocolate</h3>
-          <p class="text-gray-600">Truffle mash / pepper sauce</p>
-=======
+
+
           <h3 class="text-xl font-bold text-black dark:text-white">Hot Chocolate</h3>
           <p class="text-gray-600 dark:text-gray-100">Truffle mash / pepper sauce</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -486,13 +433,11 @@ export default function Menu(){
         <img src="https://i.pinimg.com/736x/87/17/4a/87174a7f303abed8af3f85a138dc4176.jpg" className="w-20 h-20 rounded-full object-cover hidden md:block"
         />
         <div>
-<<<<<<< HEAD
-          <h3 class="text-xl font-bold text-black">Milk Shake</h3>
-          <p class="text-gray-600">Ricotta / goat cheese / beetroot</p>
-=======
+
+        
           <h3 class="text-xl font-bold text-black dark:text-white">Milk Shake</h3>
           <p class="text-gray-600 dark:text-gray-100">Ricotta / goat cheese / beetroot</p>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
           <p class="text-gray-400 text-sm">Extra Free Drinks</p>
         </div>
       </div>
@@ -501,37 +446,31 @@ export default function Menu(){
         <p class="text-lg font-bold text-yellow-800">$40</p>
       </div>
     </div>
-  </div></div>
-<<<<<<< HEAD
-  <div className="bg-gray-200 md:py-20 py-10 md:mt-0 -mt-18">
-    <div className="text-[#82704e] text-2xl font-bold text-center ">HAPPY CUSTOMERS</div>
-  <div className="text-black text-4xl font-bold text-center mt-5">Our Customers Feedback</div>
-=======
+ </div></div>
+
+  
   <div className="bg-gray-200 md:py-20 py-10 md:mt-0 -mt-18 dark:bg-zinc-800">
     <div className="text-[#82704e] text-2xl font-bold text-center dark:text-amber-100 ">HAPPY CUSTOMERS</div>
   <div className="text-black text-4xl font-bold text-center mt-5 dark:text-white">Our Customers Feedback</div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+
   <div className="md:flex flex-row flex-col">
     <div >
         <img className="menu-star h-[400px]  md:mt-20 mt-15 md:mx-40 rounded-full"src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F4.jpg&w=640&q=75"/>
     </div>
     <div className="md:w-1/2 w-full">
-<<<<<<< HEAD
+
 <div className="text-gray-400 text-[30px] mx-20  mt-20">5/5</div>
-<div className="text-black text-3xl font-bold md:mx-20 mx-18">Best Food Ever</div>
+<div className="text-black text-3xl font-bold md:mx-20 mx-18 dark:text-white">Best Food Ever</div>
 <div className="text-gray-500 md:text-2xl text-xl md:mx-20 mx-10 leading-normal">"Targeting consultation discover apartments,ndulgence off under folly death wrote cause her way spite.Plan upon yet way get cold spot its week.Almost do am or limits hearts,Resolve parties but why she shewing."</div>
-<div className="text-black md:text-3xl text-2xl  mx-20 font-bold mt-10">Matthew J. Wyman</div>
-=======
-<div className="text-gray-400 text-[30px] mx-20  mt-20 dark:text-gray-100">5/5</div>
-<div className="text-black text-3xl font-bold md:mx-20 mx-18 dark:text-[#82704e]">Best Food Ever</div>
-<div className="text-gray-500 md:text-2xl text-xl md:mx-20 mx-10 leading-normal dark:text-white">"Targeting consultation discover apartments,ndulgence off under folly death wrote cause her way spite.Plan upon yet way get cold spot its week.Almost do am or limits hearts,Resolve parties but why she shewing."</div>
-<div className="text-black md:text-3xl text-2xl  mx-20 font-bold mt-10 dark:text-amber-50">Matthew J. Wyman</div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
+<div className="text-black md:text-3xl text-2xl  mx-20 font-bold mt-10 dark:text-white">Matthew J. Wyman</div>
+
+
+
 <div className="text-[#82704e] md:text-2xl  md:mx-20 mx-25 mt-3 font-bold">SENIOR CONSULTANT</div>
     </div>
   </div>
   </div>
-  <div className="relative bg-[url('https://i.pinimg.com/736x/43/b7/f3/43b7f3d43071e3b9942cc0b78e2515b9.jpg')] bg-cover bg-center text-white mt-30 h-[150vh] md:flex  justify-center md:pl-32 pl-10">
+  <div className="relative bg-[url('https://i.pinimg.com/736x/43/b7/f3/43b7f3d43071e3b9942cc0b78e2515b9.jpg')] bg-cover bg-center text-white md:mt-0 mt-30 h-[150vh] md:flex  justify-center md:pl-32 pl-10">
   
   <div className="absolute inset-0 bg-black/60 md:flex flex-row flex-col"></div>
 
@@ -603,13 +542,10 @@ A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio 
 </div>
 </div>
 </div>
-<<<<<<< HEAD
+
 <div><Footer/></div>
-=======
-<div className=" bg-black/90 md:py-10 py-20 flex justify-between px-20 items-center ">
-<img className="w-40 "src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
- </div>
->>>>>>> 891a095b35f130ef16bcc36782fce7ef36052ef5
-    </div>
-    )
-}
+
+
+
+
+    </div>)}

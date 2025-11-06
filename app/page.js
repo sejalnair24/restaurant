@@ -22,6 +22,7 @@ export default function Land(){
                   <option value="" disabled>Pages</option>
                    <option value="/aboutus" className="text-black p-2">AboutUs</option>
                     <option value="/chef"className="text-black">Chef</option>
+                      <option value="/login"className="text-black">Login</option>
                    </select></div>
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
