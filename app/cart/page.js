@@ -48,12 +48,12 @@ const removeItem =(index)=>{
     {cart.length === 0 ? (
         <div className="text-gray-500">Your cart is empty.</div>
       ) : (
-        <table className="w-3/4  border-collapse border border-gray-400 mt-15 mx-30 my-[25px]">
+        <table className="md:w-3/4  w-full border-collapse border border-gray-400 md:mt-15  md:mx-30 -mt-62 my-[25px]">
           <thead className="bg-[#efdecd] ">
             <tr>
               <th className="border border-gray-400 px-4 py-2 text-black">Remove </th>
               <th className="border border-gray-400 px-4 py-2 text-black">Thumbnail</th>
-              <th className="border border-gray-400 px-4 py-2 text-black">Product</th>
+              <th className="border border-gray-400 px-4 py-2 text-black"><h2 className="md:-ml-25">Product</h2></th>
               <th className="border border-gray-400 px-4 py-2 text-black">Price</th>
             </tr>
           </thead>
@@ -62,17 +62,17 @@ const removeItem =(index)=>{
               <tr key={index}>
                 <td className="border border-gray-400 px-4 py-2">
                   <button
-                    className="bg-[#e47d72] hover:bg-red-700 text-white font-bold py-2 px-4  rounded-full"
+                    className="bg-[#e47d72] hover:bg-red-700 text-white font-bold py-2 px-4  rounded-full  md:ml-15"
                     onClick={() => {
                       removeItem(index);
                      
                     }}>X</button>
                 </td>
-                <td className="border border-gray-400 px-10 py-2">
-                  <img src={element.image} alt={element.title} className="h-20 w-20 object-cover" />
+                <td className="border border-gray-400 md:px-10 px-4 py-2">
+                  <img src={element.image} alt={element.title} className="h-20 w-20 object-cover md:ml-27" />
                 </td>
-                <td className="border border-gray-400 px-4 py-2 font-bold text-lg">{element.title}</td>
-                <td className="border border-gray-400 px-4 py-2 text-[#7b6749] font-bold">${element.price}</td>
+                <td className="border border-gray-400 md:px-4 py-2 font-bold text-lg md:md-130"><h2 className="md:ml-15">{element.title}</h2></td>
+                <td className="border border-gray-400 px-4 py-2 text-[#7b6749] font-bold "><h2 className="md:ml-4">${element.price}</h2></td>
               </tr>
             ))}
           </tbody>
