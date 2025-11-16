@@ -6,7 +6,6 @@ import Master from "../components/Master";
 import Video from "../components/Video";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Background from "../components/Background";
 export default function AboutUs(){
   const router=useRouter();
     return(
