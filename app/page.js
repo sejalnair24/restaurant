@@ -5,6 +5,7 @@ import FoodCard from "./components/FoodCard";
 import { food } from "./items";
 import Footer from "./components/Footer";
 import Master from "./components/Master";
+import About from "./components/About";
 export default function Land(){
   const router=useRouter();
   const handleChange=(e)=>{const selected=e.target.value; if(selected){router.push(selected);}};
@@ -40,11 +41,11 @@ export default function Land(){
                    </select></div>
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
-             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-9 md:w-150 w-30 0"/></div>
+             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-9  w-30 "/></div>
 
           <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
-          <div className="text-white  hidden md:block md:mt-[6px] relative z-10 md:ml-[350px] mt-4" >Blog </div>
-          <div className=" text-white hidden md:block md:mt-[6px] relative z-10  mt-3">Contact  </div>
+          <div className="text-white  hidden md:block md:mt-4 relative z-10 md:ml-[350px] mt-4" onClick={()=>router.push("/blog")} >Blog </div>
+          <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3">Contact  </div>
        
           </div>     
   <div className=" absolute inset-0 bg-black/40 flex items-center justify-center"></div>
@@ -86,9 +87,9 @@ export default function Land(){
                         </div> 
                            
                    <div className="md:flex flex-row flex-col">
-                   <div > <h1 className="text-black text-3xl font-bold md:ml-100 ml-10 w-full absolute md:mt-[180px] -mt-25 dark:text-white font-[marcellus]">Our Popular Menu</h1></div>  
+                   <div > <h1 className="text-black text-3xl font-bold md:ml-100 ml-10 w-full absolute md:mt-60 -mt-25 dark:text-white font-[marcellus]">Our Popular Menu</h1></div>  
                 
-                 <div className="md:flex flex-row flex-col md:mt-[250px] mt-40 md:h-[200px] md:w-[200px] md:ml-45 md:gap-5 ">
+                 <div className="md:flex flex-row flex-col md:mt-75 mt-40 md:h-[200px] md:w-[200px] md:ml-45 md:gap-5 ">
                  < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75"className=" border-2 border-black dark:border-white rounded-[10px] hidden md:block"/>  
                    < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75"className=" border-2 border-black dark:border-white rounded-[10px] ml-[20px] hidden md:block"/>
                    < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F1.jpg&w=1920&q=75"className="border-2 border-black dark:border-white rounded-[10px] md:ml-[20px]  "/>
@@ -139,11 +140,11 @@ export default function Land(){
                    
                     <h1 className="text-black font-bold  md:text-5xl text-4xl md:ml-140 ml-8 mt-[20px]  w-full dark:text-white font-[marcellus]"> Our Specials Menu</h1> 
                   
-              <div className=" bg-white md:w-[600px] w-full rounded-[5px] md:h-[80px] h-90 items-center border-2  border-black md:ml-120 md:mt-10  mt-5 md:flex flex-row flex flex-col md:text-xl text-2xl text-black font-[lato]" >
-                 <h2 className=" absolute md:ml-[30px] ml-27 md:mt-0 -mt-50 ">Main Dishes</h2>
-                 <h2 className="absolute md:ml-50 ml-27 md:mt-0 -mt-19">Desserts</h2>
-                  <h2 className="absolute md:ml-[320px] ml-27 md:mt-0 mt-14">Sea Food</h2>
-                    <h2 className="absolute md:ml-[460px] ml-27 md:mt-0 mt-47">Beverages</h2>
+              <div className=" md:bg-white md:w-[600px] w-full rounded-[5px] md:h-[80px] h-90 items-center border-2  border-black md:ml-120 md:mt-10  mt-5 md:flex flex-row flex flex-col md:text-xl text-2xl text-black font-[lato]" >
+                 <h2 className=" absolute md:ml-[30px] ml-27 md:mt-0 -mt-50 bg-pink-200 md:bg-white">Main Dishes</h2>
+                 <h2 className="absolute md:ml-50 ml-27 md:mt-0 -mt-19 bg-pink-200 md:bg-white">Desserts</h2>
+                  <h2 className="absolute md:ml-[320px] ml-27 md:mt-0 mt-14 bg-pink-200 md:bg-white">Sea Food</h2>
+                    <h2 className="absolute md:ml-[460px] ml-27 md:mt-0 mt-47 bg-pink-200 md:bg-white">Beverages</h2>
                   </div>
 
              </div>
@@ -258,35 +259,7 @@ export default function Land(){
  
     
   <div >
-              
-                <div className="md:h-[500px] h-275 rounded-[40px]  bg-black  md:flex flex-row flex-col md:mt-0 mt-20 md:w-[1200px] w-full md:ml-40 relative z-10 -mb-40" >
-                        
-   
-                  <div className="flex flex-col">
-                     <h1 className="text-white md:ml-[80px] md:mt-[100px] mt-25 font-bold md:ml-[120px] ml-10 text-2xl">About Us</h1>
-                <h6 className=" text-gray-400 md:ml-[80px] mt-[40px] ml-10 drop-shadow-lg relative z-10">Continued at zealously<br></br> necessary is Surrounded sir<br></br> motionless she end literature.<br></br>Gay direction neglected.</h6>   
-                                </div> 
-                                  <div className="flex flex-col">
-                     <h1 className="text-white md:ml-[80px] md:mt-[100px] mt-15 font-bold md:ml-[120px] ml-10 text-2xl">Explore</h1>
-                <h6 className=" text-gray-400 md:ml-[80px] ml-10 mt-[40px] drop-shadow-lg relative z-10 md:space-y-15 space-y-10">Company Profile<br></br>About<br></br>Help Center<br></br>Career<br></br>Features<br></br>Contact</h6>   
-                                </div>  
-                                
-           
-
-        <div className="flex flex-col">
-        <h1 className="text-white md:ml-[80px] md:mt-[100px] mt-15 font-bold md:ml-[120px] ml-10 text-2xl">Contact Info</h1>
-        <h6 className=" text-gray-400 md:ml-[80px] ml-10 mt-[40px] drop-shadow-lg relative z-10">175 10h Street, Office 375<br></br> Berlin, De 21562<br></br>+123 34598768<br></br>+554 34598734<br></br>food@restan.com</h6>   
-         </div> 
-       
-        <div className="flex flex-col ">
-                     <h1 className="text-white md:ml-[80px] md:mt-[100px] mt-15 font-bold md:ml-[120px] ml-10 text-2xl">Newsletter</h1>
-                <h6 className=" text-gray-400 md:ml-[80px] ml-10 mt-[40px] drop-shadow-lg relative z-10">Join our subscribers list to get the<br></br> latest news and special offers.<br></br> motionless she end literature.<br></br>Gay direction neglected.</h6>   
-       </div> 
-        
-    
-<div className="md:flex flex-row  md:mt-140 top-60  mt-54 ml-10 text-white md:-ml-50 "><h5 > Copyright 2025. Restan. All Rights Reserved</h5></div>
-
-        </div>
+              <div><About/></div>
         <div className="md:mt-32 mt-28"><Footer/></div>
          
 
