@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Book from "../components/Book";
 export default function Menu(){
     const router=useRouter();
      return(
@@ -451,13 +452,13 @@ export default function Menu(){
     </div>
   </div>
   </div>
-  <div className="relative bg-[url('https://i.pinimg.com/736x/43/b7/f3/43b7f3d43071e3b9942cc0b78e2515b9.jpg')] bg-cover bg-center text-white md:mt-0 mt-30 h-[150vh] md:flex  justify-center md:pl-32 pl-10">
+  <div className="relative bg-[url('https://i.pinimg.com/736x/43/b7/f3/43b7f3d43071e3b9942cc0b78e2515b9.jpg')] bg-cover bg-center text-white  md:h-180 h-[150vh] md:flex  justify-center md:pl-32 pl-10">
   
   <div className="absolute inset-0 bg-black/60 md:flex flex-row flex-col"></div>
 
   
   <div className="relative ">
-   <div> <h1 className="text-2xl font-bold font-[marcellus] w-1/2 mt-10 md:py-0 py-15">RESERVATION</h1>
+   <div> <h1 className="text-2xl font-bold font-[marcellus] w-1/2 md:mt-10 mt-5 md:py-0 py-15">RESERVATION</h1>
     <div className="md:text-6xl text-4xl font-extrabold font-[lato] md:w-1/2 w-full md:mt-0 -mt-10">Reserve your favorite private table</div>
     <p className="text-[18px] mt-5  md:w-1/2 w-full text-gray-300">
 A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.    </p>
@@ -466,62 +467,7 @@ A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio 
     </div>
    
   </div></div>
-<div className="md:w-1/2 w-full relative z-10 md:ml-0 -ml-5">
-<div className="md:flex justify-items-normal md:w-[400px] w-full ">
-  <form className="bg-gray-400 md:mt-20 mt-10 rounded-2xl md:p-8 p-4  ">
-    <h2 className="text-2xl font-bold text-center mb-6 text-black font-[marcellus]">
-      Book Your Table
-    </h2>
-
-   
-    <div className="mb-4">
-      <label className=" text-black font-semibold mb-2">Phone Number</label>
-      <input
-        type="number"
-        placeholder="Enter your phone number"
-        className="w-full p-3 border border-gray-300 rounded-lg"
-      />
-    </div>
-
-   
-    <div className="mb-4">
-      <label className=" text-black font-semibold mb-2">Number of Persons</label>
-      <input
-        type="number"
-        min="1"
-       
-        className="w-full p-3 border border-gray-300 rounded-lg "
-      />
-    </div>
-
-    
-    <div className="mb-4">
-      <label className=" text-black font-semibold mb-2">Date</label>
-      <input
-        type="date"
-        className="w-full p-3 border border-gray-300 rounded-lg "
-      />
-    </div>
-
-   
-    <div className="mb-6">
-      <label className=" text-black font-semibold mb-2">Time</label>
-      <input
-        type="time"
-        className="w-full p-3 border border-gray-300 rounded-lg"
-      />
-    </div>
-
-   
-    <button
-      type="submit"
-      className="w-full bg-[#82704e] hover:bg-white hover:text-black text-white font-semibold py-3 rounded-lg "
-    >
-      Book A Table
-    </button>
-  </form>
-</div>
-</div>
+<div className="md:mt-20 md:ml-0 -ml-10"><Book/></div>
 </div>
 
 <div><Footer/></div>
