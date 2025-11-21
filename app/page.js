@@ -40,7 +40,8 @@ export default function Land(){
                     <option value="/chef"className="text-black">Chef</option>
                       <option value="/login"className="text-black">Login</option>
                       <option value="/cart"className="text-black">Cart</option>
-                   </select></div>
+                   </select>
+                   </div>
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
              <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-9  w-30 "/></div>
@@ -60,22 +61,17 @@ export default function Land(){
            </div>
        
                </div>   
-               
-             
-       
         <div className="md:flex flex-row flex-col">
         <div><Book/></div>
-                           
-                   <div className="md:flex flex-row flex-col">
-                   <div > <h1 className="text-black text-3xl font-bold md:ml-100 ml-10 w-full absolute md:mt-60 -mt-25 dark:text-white font-[marcellus]">Our Popular Menu</h1></div>  
-                
-                 <div className="md:flex flex-row flex-col md:mt-75 mt-40 md:h-[200px] md:w-[200px] md:ml-45 md:gap-5 ">
-                 < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75"className=" border-2 border-black dark:border-white rounded-[10px] hidden md:block"/>  
-                   < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75"className=" border-2 border-black dark:border-white rounded-[10px] ml-[20px] hidden md:block"/>
-                   < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F1.jpg&w=1920&q=75"className="border-2 border-black dark:border-white rounded-[10px] md:ml-[20px]  "/>
-                     </div>    
-                        </div>  
-                         </div>
+        <div className="md:flex flex-row flex-col">
+         <div > <h1 className="text-black text-3xl font-bold md:ml-100 ml-10 w-full absolute md:mt-60 -mt-25 dark:text-white font-[marcellus]">Our Popular Menu</h1></div>  
+          <div className="md:flex flex-row flex-col md:mt-75 mt-40 md:h-[200px] md:w-[200px] md:ml-45 md:gap-5 ">
+           < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75"className=" border-2 border-black dark:border-white rounded-[10px] hidden md:block"/>  
+           < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75"className=" border-2 border-black dark:border-white rounded-[10px] ml-[20px] hidden md:block"/>
+         < img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F1.jpg&w=1920&q=75"className="border-2 border-black dark:border-white rounded-[10px] md:ml-[20px]  "/>
+         </div>    
+        </div>  
+        </div>
                         </div>
                        
                         
@@ -126,10 +122,8 @@ export default function Land(){
                   <h2 className="absolute md:ml-[320px] ml-27 md:mt-0 mt-14 bg-pink-200 md:bg-white">Sea Food</h2>
                     <h2 className="absolute md:ml-[460px] ml-27 md:mt-0 mt-47 bg-pink-200 md:bg-white">Beverages</h2>
                   </div>
-
-             </div>
-             
-         <div className=" md:grid grid-cols-3 w-full grid-rows-2  md:gap-5 md:ml-4  md:px-0 px-5 md:mt-10 mt-2  ">
+                   </div>
+       <div className=" md:grid grid-cols-3 w-full grid-rows-2  md:gap-5 md:ml-4  md:px-0 px-5 md:mt-10 mt-2  ">
           {food.map((element,index)=> (
             <FoodCard
             key={index}
@@ -137,21 +131,19 @@ export default function Land(){
             price={element.price}
             foodimg={element.image}
             description={element.description}
-
             buttontext={"Add to Cart"}
-            
             onBorrowClick={()=>
-              addToCart(element)}
+            addToCart(element)}
             />
           ))}
         </div> 
            <div className="md:h-[600px] h-220  rounded-[40px]  bg-black  md:flex flex-row flex-col md:w-[1160px] w-full md:px-0 px-2 md:ml-[100px] md:mt-20" >
-                    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F16.png&w=2048&q=75" className="md:h-[450px] md:w-[400px] h-100 w-60 md:ml-[80px] ml-15 md:mt-[80px] md:py-0 py-20"/>
-                  <div className="flex flex-col">
-                     <h1 className="text-white md:ml-[60px] ml-5 md:mt-[180px] md:mt-20 mt-3 font-bold md:ml-40 md:text-5xl text-3xl font-[marcellus]">Are you Ready to Start<br></br> your online Order?</h1>
-                <h6 className=" text-gray-400 md:ml-[60px] ml-5 mt-[40px] drop-shadow-lg relative z-10">Bndulgence diminution so discovered mr apartments. Are off under folly death<br></br> wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am<br></br> or limits hearts. Resolve parties but why she shewing. She sang know now</h6>   
-                <h2 className="bg-white hover:bg-black hover:border-2 hover:border-white text-black hover:text-white h-[50px] w-[180px] rounded-[30px] border-2 border-black flex items-center justify-center md:ml-[60px] ml-22  mt-[50px] font-[lato]">App Store</h2>
-                             <h2 className="bg-[#7b4c2b] hover:bg-white text-white hover:text-black h-[50px] w-[180px] rounded-[30px] flex items-center justify-center md:ml-[260px] ml-22 absolute md:mt-[440px] mt-95 font-[lato]">Play Store</h2>
+           <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F16.png&w=2048&q=75" className="md:h-[450px] md:w-[400px] h-100 w-60 md:ml-[80px] ml-15 md:mt-[80px] md:py-0 py-20"/>
+           <div className="flex flex-col">
+           <h1 className="text-white md:ml-[60px] ml-5 md:mt-[180px] md:mt-20 mt-3 font-bold md:ml-40 md:text-5xl text-3xl font-[marcellus]">Are you Ready to Start<br></br> your online Order?</h1>
+            <h6 className=" text-gray-400 md:ml-[60px] ml-5 mt-[40px] drop-shadow-lg relative z-10">Bndulgence diminution so discovered mr apartments. Are off under folly death<br></br> wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am<br></br> or limits hearts. Resolve parties but why she shewing. She sang know now</h6>   
+            <h2 className="bg-white hover:bg-black hover:border-2 hover:border-white text-black hover:text-white h-[50px] w-[180px] rounded-[30px] border-2 border-black flex items-center justify-center md:ml-[60px] ml-22  mt-[50px] font-[lato]">App Store</h2>
+            <h2 className="bg-[#7b4c2b] hover:bg-white text-white hover:text-black h-[50px] w-[180px] rounded-[30px] flex items-center justify-center md:ml-[260px] ml-22 absolute md:mt-[440px] mt-95 font-[lato]">Play Store</h2>
                 </div>  
            
        </div>  
@@ -161,10 +153,6 @@ export default function Land(){
   <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75"className="h-[350px] md:w-[550px] w-100 md:px-0 px-5 md:ml-50 mt-[50px]" /> 
 
 
-   
-  
-    
-   
  <div className="flex flex-row">
    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=1920&q=75"className="h-[350px] md:w-[550px] w-100 md:ml-[60px] md:mt-[50px] mt-60 md:px-0 px-5 " />   </div> </div>
    
@@ -190,8 +178,6 @@ export default function Land(){
   <div >
               <div><About/></div>
         <div className="md:mt-32 mt-28"><Footer/></div>
-         
-
 </div>
 </div>
      
