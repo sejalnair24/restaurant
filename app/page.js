@@ -24,7 +24,7 @@ export default function Land(){
        
          
          
-          <div className=" md:h-screen h-[290px] flex flex-col  bg-no-repeat bg-center w-full md:bg-cover  bg-black bg-contain" style={{backgroundImage:"url('https://restan-nextjs.vercel.app/assets/img/banner/14.jpg')"}} >
+          <div className=" md:h-screen h-90 flex flex-col  bg-no-repeat bg-center w-full md:bg-cover  bg-black bg-contain" style={{backgroundImage:"url('https://restan-nextjs.vercel.app/assets/img/banner/14.jpg')"}} >
             
        
          <div className="fixed top-0 left-0  z-10 md:h-[50px] h-40 w-[160px]  mx-150px flex flex-row  ml-[2px] md:mt-20 md:space-x-20 space-x-3 md:font-bold font-[lato] md:text-xl" >
@@ -44,13 +44,13 @@ export default function Land(){
                
                    <div className=" md:mt-[6px] ml-[10px] text-white  drop-shadow-lg relative z-10 hidden md:block mt-[50px]"onClick={()=>router.push("/menu")}>Menu </div>
          
-             <div ><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-[90px] ml-30 md:mt-[4px] mt-[5px] md:h-15 h-7  w-20 "/></div>
+             <div className="md:mt-0 mt-4"><img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className="relative z-10 md:ml-28 md:w-24  ml-30 md:mt-[4px] mt-[5px] md:h-15 h-7  w-18 "/></div>
       <div className=" text-white hidden md:block relative z-10 md:absolute top-0  md:ml-[900px]  mt-3"onClick={()=>router.push("/cart")}>Shop  </div>
           <div className="text-white  hidden md:block md:mt-4 relative z-10 md:ml-[350px] mt-4" onClick={()=>router.push("/blog")} >Blog </div>
           <div className=" text-white hidden md:block md:mt-4 relative z-10  mt-3" onClick={()=>router.push("/contactus")}>Contact  </div>
         <div className="md:hidden w-full text-right px-4">
   <select
-    className="p-1 mt-2 ml-30 rounded bg-white text-black"
+    className="p-1 mt-6 ml-30 rounded bg-white text-black"
     onChange={(e) => router.push(e.target.value)}
   >
     <option value="">Pages</option>
@@ -66,7 +66,7 @@ export default function Land(){
              </div> 
   <div className=" absolute inset-0 bg-black/40 flex items-center justify-center"></div>
           <div className=" md:mt-[200px] mt-[60px] md:ml-[450px] ml-[80px] space-x-4 relative z-10 ">
-           <h1 className=" font-bold md:mt-30 mt-15 md:text-8xl text-3xl drop-shadow-lg text-white font-[marcellus]"> Best Restaurant</h1>  
+           <h1 className=" font-bold md:mt-28 mt-15 md:text-8xl text-3xl drop-shadow-lg text-white font-[marcellus]"> Best Restaurant</h1>  
            <div className="md:w-50 hidden md:block md:h-50 w-20 h-20 border-2 border-[#b8860b] rounded-full md:ml-[150px] ml-[80px] md:mt-[50px] mt-[10px] ">
          <h3 className="md:text-2xl text-sm font-bold md:ml-14 ml-3 mt-6 md:mt-14 text-white font-[lato]">Restan</h3>   
          <h2 className="text-white md:ml-14 md:mt-3 ">Best Food<br></br> since-1865S</h2>

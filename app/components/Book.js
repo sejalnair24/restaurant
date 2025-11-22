@@ -5,7 +5,7 @@
     return(
 <div>
         <div className="md:flex flex-row flex-col">
-         <div className="h-[450px] md:mt-0 mt-22 rounded-[40px] flex flex-col bg-white md:border-2 md:border-black md:ml-[100px]  md:w-[400px] w-full py-[80px] relative z-10" >
+         <div className="h-[450px] md:mt-0 mt-32 rounded-[40px] flex flex-col bg-white md:border-2 md:border-black md:ml-[100px]  md:w-[400px] w-full py-[80px] relative z-10" >
          <h1  className="text-black font-bold ml-[60px] md:text-3xl">Book a Table</h1>
           <div className=" bg-white  md:p-1 w-[270px] rounded-[5px] h-[90px] items-center border-2 border-gray-300 ml-[60px] mt-[20px] " >
               <input type="text" placeholder="Phno" className="mt-[7px] ml-[20px] text-gray-400"/>  </div>
