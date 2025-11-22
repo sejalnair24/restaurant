@@ -66,8 +66,8 @@ export default function Land(){
              </div> 
   <div className=" absolute inset-0 bg-black/40 flex items-center justify-center"></div>
           <div className=" md:mt-[200px] mt-[60px] md:ml-[450px] ml-[80px] space-x-4 relative z-10 ">
-           <h1 className=" font-bold md:mt-0 mt-15 md:text-8xl text-3xl drop-shadow-lg text-white font-[marcellus]"> Best Restaurant</h1>  
-           <div className="md:w-50 hidden md:block md:h-50 w-20 h-20 border-2 border-[#b8860b] rounded-full md:ml-[130px] ml-[80px] md:mt-[50px] mt-[10px] ">
+           <h1 className=" font-bold md:mt-30 mt-15 md:text-8xl text-3xl drop-shadow-lg text-white font-[marcellus]"> Best Restaurant</h1>  
+           <div className="md:w-50 hidden md:block md:h-50 w-20 h-20 border-2 border-[#b8860b] rounded-full md:ml-[150px] ml-[80px] md:mt-[50px] mt-[10px] ">
          <h3 className="md:text-2xl text-sm font-bold md:ml-14 ml-3 mt-6 md:mt-14 text-white font-[lato]">Restan</h3>   
          <h2 className="text-white md:ml-14 md:mt-3 ">Best Food<br></br> since-1865S</h2>
            </div>
