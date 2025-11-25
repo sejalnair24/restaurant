@@ -39,6 +39,8 @@ export default function Land(){
                     <option value="/chef"className="text-black">Chef</option>
                       <option value="/login"className="text-black">Login</option>
                       <option value="/cart"className="text-black">Cart</option>
+                       <option value="/reservation"className="text-black">Reservation</option>
+                        <option value="/register"className="text-black">Register</option>
                    </select>
                    </div>
                
