@@ -2,6 +2,7 @@ This is Restan a project made using React Next.js
 
 Click here to view the deployed app on vercel:
 👇
+
 https://restaurant-five-navy.vercel.app/
 
 This project includes features like reusable components,light mode-dark mode compatibility,user responsiveness and also it includes navigation between pages :
